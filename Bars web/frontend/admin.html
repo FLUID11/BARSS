@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>BARS Admin Panel</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+<h1 class="logo">BARS ADMIN</h1>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="admin.html">Admin</a>
+</nav>
+</header>
+
+
+<section class="admin-section">
+
+<!-- ================= MOVIE SECTION ================= -->
+
+<h2>Add New Media</h2>
+
+<form id="movieForm">
+
+<label>Title</label>
+<input type="text" id="title" required>
+
+<label>Poster URL</label>
+<input type="text" id="poster" required>
+
+<label>Genre</label>
+<input type="text" id="genre">
+
+<label>Description</label>
+<textarea id="description"></textarea>
+
+<label>Trailer Link (YouTube embed)</label>
+<input type="text" id="trailer">
+
+<label>Rating</label>
+<input type="number" step="0.1" min="0" max="5" id="rating">
+
+<label>Type</label>
+<select id="type">
+<option value="movie">Movie</option>
+<option value="anime">Anime</option>
+</select>
+
+<!-- NEW PART -->
+
+<label>Release Type</label>
+<select id="is_theatre" onchange="toggleOTT()">
+<option value="1">In Theatre</option>
+<option value="0">OTT</option>
+</select>
+
+<div id="ottField" style="display:none;">
+<label>OTT Platform</label>
+<input type="text" id="ott_platform" placeholder="Netflix / Prime">
+</div>
+
+<button type="submit">Add Media</button>
+
+</form>
+
+
+<!-- ================= SHOWTIME SECTION ================= -->
+
+<h2 style="margin-top:50px;">Add Show Timing</h2>
+
+<form id="showtimeForm">
+
+<label>Movie ID</label>
+<input type="number" id="movie_id" required>
+
+<label>Theater ID</label>
+<input type="number" id="theater_id" required>
+
+<label>Date</label>
+<input type="date" id="show_date" required>
+
+<label>Time</label>
+<input type="time" id="show_time" required>
+
+<button type="submit">Add Showtime</button>
+
+</form>
+
+</section>
+
+
+<script src="js/admin.js"></script>
+
+</body>
+</html>

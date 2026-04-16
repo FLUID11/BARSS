@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Movie Details - BARS</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+<h1 class="logo">BARS</h1>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="#">Movies</a>
+<a href="#">Anime</a>
+<a href="#">Reviews</a>
+</nav>
+</header>
+
+
+<!-- MOVIE DETAILS -->
+
+<section class="movie-details">
+
+<div class="movie-poster">
+<img src="https://via.placeholder.com/300x450" id="moviePoster">
+</div>
+
+<div class="movie-info">
+
+<h1 id="movieTitle">Movie Title</h1>
+
+<p class="rating">⭐ <span id="movieRating">4.5</span></p>
+
+<p class="genre" id="movieGenre">Action / Adventure</p>
+
+<p id="movieDescription">
+This is where the movie description will appear.
+</p>
+
+<button class="trailer-btn">Watch Trailer</button>
+
+<button id="bookTicketBtn">Book Ticket</button>
+</div>
+
+</section>
+
+
+<!-- TRAILER -->
+
+<section class="trailer-section">
+
+<h2>Trailer</h2>
+
+<iframe
+width="800"
+height="400"
+src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+frameborder="0"
+allowfullscreen
+id="movieTrailer">
+</iframe>
+
+</section>
+
+
+<!-- REVIEWS -->
+
+<section class="reviews-section">
+
+<h2>User Reviews</h2>
+
+<div id="reviewsContainer">
+
+<div class="review-card">
+<h4>User123</h4>
+<p>⭐⭐⭐⭐</p>
+<p>Great movie with amazing visuals.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ADD REVIEW -->
+
+<section class="add-review">
+
+<h2>Add Review</h2>
+
+<form id="reviewForm">
+
+<label>Rating</label>
+
+<select id="rating">
+<option value="5">⭐⭐⭐⭐⭐</option>
+<option value="4">⭐⭐⭐⭐</option>
+<option value="3">⭐⭐⭐</option>
+<option value="2">⭐⭐</option>
+<option value="1">⭐</option>
+</select>
+
+<textarea id="reviewText" placeholder="Write your review"></textarea>
+
+<button type="submit">Submit Review</button>
+
+</form>
+
+</section>
+
+<script src="js/movie.js"></script>
+
+</body>
+</html>

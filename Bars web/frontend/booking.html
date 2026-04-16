@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BARS Booking</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+<h1 class="logo">BARS</h1>
+</header>
+
+<section class="booking-container">
+
+<h1>Book Tickets</h1>
+
+<!-- LOCATION -->
+
+<div id="locationSection">
+
+<h3>Select Location</h3>
+
+<select id="state">
+<option value="">Select State</option>
+<option>Odisha</option>
+</select>
+
+<select id="district">
+<option value="">Select District</option>
+<option>Bhubaneswar</option>
+</select>
+
+<button class="btn" onclick="saveLocation()">Continue</button>
+
+</div>
+
+<!-- THEATERS -->
+
+<div id="theaterSection" style="display:none;">
+
+<h3>Select Theater</h3>
+
+<div id="theaterContainer"></div>
+
+</div>
+
+<!-- SHOWTIMES -->
+
+<div id="showtimeSection" style="display:none;">
+
+<h3>Select Showtime</h3>
+
+<div id="showtimeContainer"></div>
+
+</div>
+
+<!-- SEATS -->
+
+<div id="seatSection" style="display:none;">
+
+<h3>Select Seats</h3>
+
+<div class="screen">SCREEN</div>
+
+<div id="seatGrid" class="seat-grid"></div>
+
+<p>Seats: <span id="seatList"></span></p>
+<p>Total: ₹<span id="totalPrice">0</span></p>
+
+<button class="btn" onclick="proceedPayment()">Proceed to Payment</button>
+
+</div>
+
+</section>
+
+<script src="js/booking.js"></script>
+
+</body>
+</html>
