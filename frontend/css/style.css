@@ -1,0 +1,318 @@
+body{
+background:#0d0d0d;
+color:white;
+font-family:Arial;
+margin:0;
+}
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+background:black;
+}
+
+.logo{
+color:crimson;
+}
+
+.navbar a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+}
+
+/* HERO */
+
+.hero{
+height:400px;
+background:url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba") center/cover;
+display:flex;
+align-items:center;
+padding-left:50px;
+}
+
+.hero button{
+background:crimson;
+border:none;
+padding:10px 20px;
+color:white;
+cursor:pointer;
+}
+
+/* SECTION */
+
+.section{
+padding:40px;
+}
+
+.movie-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
+
+/* MOVIE CARD */
+
+.movie-card{
+background:#1a1a1a;
+padding:10px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.movie-card img{
+width:100%;
+border-radius:10px;
+}
+
+.movie-card:hover{
+transform:scale(1.05);
+}
+
+/* REVIEWS */
+
+.review-card{
+background:#1a1a1a;
+padding:20px;
+margin:10px 0;
+border-radius:10px;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:black;
+}
+
+.movie-details{
+display:flex;
+padding:40px;
+gap:40px;
+}
+
+.movie-poster img{
+width:300px;
+border-radius:10px;
+}
+
+.movie-info{
+max-width:600px;
+}
+
+.book-btn{
+background:crimson;
+border:none;
+padding:12px 20px;
+color:white;
+cursor:pointer;
+margin-top:10px;
+}
+
+.trailer-btn{
+background:#333;
+border:none;
+padding:12px 20px;
+color:white;
+cursor:pointer;
+}
+
+.trailer-section{
+padding:40px;
+}
+
+.reviews-section{
+padding:40px;
+}
+
+.add-review{
+padding:40px;
+}
+
+textarea{
+width:100%;
+height:100px;
+margin-top:10px;
+}
+
+.admin-section{
+padding:40px;
+max-width:600px;
+margin:auto;
+}
+
+.admin-section input,
+.admin-section textarea,
+.admin-section select{
+width:100%;
+padding:10px;
+margin-top:5px;
+margin-bottom:20px;
+background:#1a1a1a;
+color:white;
+border:none;
+border-radius:5px;
+}
+
+.admin-section button{
+background:crimson;
+color:white;
+border:none;
+padding:12px;
+cursor:pointer;
+width:100%;
+}
+
+
+/* BOOKING PAGE */
+
+.booking-container{
+padding:40px;
+max-width:1100px;
+margin:auto;
+}
+
+.booking-title{
+margin-bottom:30px;
+font-size:28px;
+}
+
+.booking-card{
+background:#141414;
+padding:30px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.5);
+}
+
+.location-section,
+.theater-section,
+.showtime-section{
+margin-bottom:30px;
+}
+
+select{
+padding:10px;
+margin-right:10px;
+margin-top:10px;
+background:#1f1f1f;
+color:white;
+border:none;
+border-radius:5px;
+}
+
+.btn{
+background:crimson;
+color:white;
+padding:10px 20px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+margin-top:10px;
+}
+
+.btn:hover{
+opacity:0.9;
+}
+
+.theater-card{
+background:#1a1a1a;
+padding:20px;
+margin-top:15px;
+border-radius:8px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.theater-card h3{
+margin:0;
+}
+
+.theater-card button{
+background:crimson;
+border:none;
+padding:8px 16px;
+color:white;
+border-radius:5px;
+cursor:pointer;
+}
+
+#showtimeContainer button{
+
+background:#1f1f1f;
+border:none;
+color:white;
+padding:10px 18px;
+margin:10px;
+border-radius:5px;
+cursor:pointer;
+transition:0.2s;
+
+}
+
+#showtimeContainer button:hover{
+background:crimson;
+}
+
+/* SEAT LAYOUT */
+
+.seat-container{
+text-align:center;
+padding:40px;
+}
+
+.screen{
+background:white;
+color:black;
+padding:10px;
+margin:20px auto;
+width:300px;
+border-radius:5px;
+}
+
+.seat-grid{
+display:grid;
+grid-template-columns:repeat(4,60px);
+gap:15px;
+justify-content:center;
+margin:30px 0;
+}
+
+.seat{
+background:#444;
+color:white;
+padding:15px;
+border-radius:5px;
+cursor:pointer;
+}
+
+.seat:hover{
+background:crimson;
+}
+
+.seat.selected{
+background:green;
+}
+
+.price-box{
+margin-top:30px;
+}
+
+.auth-link{
+margin-top:15px;
+text-align:center;
+}
+
+.auth-link a{
+color:crimson;
+text-decoration:none;
+}
+
+.auth-link a:hover{
+text-decoration:underline;
+}
